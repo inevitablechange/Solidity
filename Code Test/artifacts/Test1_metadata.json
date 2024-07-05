@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "getStudent",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_score",
+						"type": "uint256"
+					}
+				],
+				"name": "pushStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Code Test/Test1.sol": "Test1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Code Test/Test1.sol": {
+			"keccak256": "0xd7385e14ec4b766064b280785e9ba38409fd910fb1f4b2a280b96e9b7b62686e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a1783b74c26cfb5e6c471ad2cf43277fd94cc6baea207832e2398b7a485e9bf0",
+				"dweb:/ipfs/QmQ2RTRwb16DhPSUByDFvWsHbv1qAh7E9LBR5NAzHYYb6h"
+			]
+		}
+	},
+	"version": 1
+}
