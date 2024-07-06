@@ -36,13 +36,16 @@ contract Test1{
         }
 
         students.push(Student(_name, _number, _score, grade));
+
     }
 
     function getStudent(string memory _name) public view returns (Student memory) {
         for(uint i=0; i<students.length;i++){
-            if(students[i].name == _name) {
+            if(keccak256(abi.encodePacked(students[i].name))==keccak256(abi.encodePacked(_name))) {
                 return students[i];
             }
         }
+
+        return Student("",0,0,"");
     }
 }

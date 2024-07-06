@@ -8,17 +8,39 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_number",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					}
 				],
 				"name": "getStudent",
 				"outputs": [
 					{
-						"internalType": "string",
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "grade",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Test1.Student",
 						"name": "",
-						"type": "string"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -76,11 +98,11 @@
 	},
 	"sources": {
 		"Code Test/Test1.sol": {
-			"keccak256": "0xd7385e14ec4b766064b280785e9ba38409fd910fb1f4b2a280b96e9b7b62686e",
+			"keccak256": "0xb087a305325b20ed7ca7691dc53de7fa00de3f16ee99a14b9df2df5ddc9c71d1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1783b74c26cfb5e6c471ad2cf43277fd94cc6baea207832e2398b7a485e9bf0",
-				"dweb:/ipfs/QmQ2RTRwb16DhPSUByDFvWsHbv1qAh7E9LBR5NAzHYYb6h"
+				"bzz-raw://acc6d78424df77dec135a6a065892ceb0a8020ce10ed7620a9638e1309dbc4a5",
+				"dweb:/ipfs/QmcA4Q8CvM9vSpHbzHGfTggKBsERqDujcKf3GkDA2xzac5"
 			]
 		}
 	},
