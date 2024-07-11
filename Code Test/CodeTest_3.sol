@@ -57,7 +57,7 @@ abi.encodePacked() 사용하기
     }
 
     // 비밀번호 5회 이상 오류시 경고 메세지 기능 - 비밀번호 시도 회수가 5회되면 경고 메세지 반환
-    function checkLoginPassword(string memory _id, string memory _password) public returns (bool) {
+    function checkLoginPassword(string memory _id, string memory _password) internal returns (bool) {
         if(keccak256(abi.encodePacked(_id, _password)) == loginData[_id]) {
             loginFailureCounter[_id] = 0;
             return true;
@@ -69,6 +69,5 @@ abi.encodePacked() 사용하기
             }
             return false;
         }
-
     }
 }

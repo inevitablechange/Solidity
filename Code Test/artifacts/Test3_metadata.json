@@ -18,30 +18,6 @@
 						"type": "string"
 					}
 				],
-				"name": "checkLoginPassword",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_id",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_password",
-						"type": "string"
-					}
-				],
 				"name": "deleteAccount",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -125,11 +101,11 @@
 	},
 	"sources": {
 		"Code Test/CodeTest_3.sol": {
-			"keccak256": "0x16ee8cfad7f72a2304f404cc95048fd02353d78de2d5553ba285cd1db1b1068f",
+			"keccak256": "0xce568f94fef8fd8c93bac95623c894da793c1514271e330843a1fda59293b31f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://92f669615ee14a9faa5971e7accc826e59faf9856cf7719b22ed752749ea1d66",
-				"dweb:/ipfs/Qmf2zM8Lkc8qv8zFJmC3yck2jWEBT1mBEaLWLWYkvFgUSy"
+				"bzz-raw://b4e4176e2ddfd6ea0d44aa7cbcf26f6efea83a5ed94e291fd0b08125c7f0e502",
+				"dweb:/ipfs/QmWRx45HmY1PnkVDgwUsCGe4weFixtq1r3wxBJJXV5NADN"
 			]
 		}
 	},
