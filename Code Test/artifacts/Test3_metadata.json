@@ -1,0 +1,137 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_password",
+						"type": "string"
+					}
+				],
+				"name": "checkLoginPassword",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_password",
+						"type": "string"
+					}
+				],
+				"name": "deleteAccount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_password",
+						"type": "string"
+					}
+				],
+				"name": "login",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_password",
+						"type": "string"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setTestData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Code Test/CodeTest_3.sol": "Test3"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Code Test/CodeTest_3.sol": {
+			"keccak256": "0x16ee8cfad7f72a2304f404cc95048fd02353d78de2d5553ba285cd1db1b1068f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://92f669615ee14a9faa5971e7accc826e59faf9856cf7719b22ed752749ea1d66",
+				"dweb:/ipfs/Qmf2zM8Lkc8qv8zFJmC3yck2jWEBT1mBEaLWLWYkvFgUSy"
+			]
+		}
+	},
+	"version": 1
+}
