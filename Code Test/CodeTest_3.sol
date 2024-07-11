@@ -22,8 +22,8 @@ abi.encodePacked() 사용하기
 * 회원탈퇴 기능 - 회원이 자신의 ID와 PW를 넣고 회원탈퇴 기능을 실행하면 관련 정보 삭제
 */
 
-    mapping (string => bytes32) loginData;
-    mapping (string => uint8) loginFailureCounter;
+    mapping (string => bytes32) private loginData;
+    mapping (string => uint8) private loginFailureCounter;
 
 
     // 로그인 기능 - ID, PW를 넣으면 로그인 여부를 알려주는 기능
