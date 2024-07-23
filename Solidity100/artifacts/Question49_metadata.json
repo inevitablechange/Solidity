@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "getLastThree",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/Solidity41-50.sol": "Question49"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/Solidity41-50.sol": {
+			"keccak256": "0xbfdbf2d71fa06a1c792d41ab97cc9f864d69978e658ce7da4e852d56a2547696",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d8705ab795d79ada073012379230d032e0c3a5417b90b99f287039ed1be21dd4",
+				"dweb:/ipfs/QmQMBzZdcrwaZPA7kMad2ozPMgecaPM8qGTVsk4NDH3r4N"
+			]
+		}
+	},
+	"version": 1
+}
