@@ -46,12 +46,36 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity100/Solidity41-50.sol": {
-			"keccak256": "0xbfdbf2d71fa06a1c792d41ab97cc9f864d69978e658ce7da4e852d56a2547696",
+		"@openzeppelin/contracts/utils/Strings.sol": {
+			"keccak256": "0x55f102ea785d8399c0e58d1108e2d289506dde18abc6db1b7f68c1f9f9bc5792",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d8705ab795d79ada073012379230d032e0c3a5417b90b99f287039ed1be21dd4",
-				"dweb:/ipfs/QmQMBzZdcrwaZPA7kMad2ozPMgecaPM8qGTVsk4NDH3r4N"
+				"bzz-raw://6e52e0a7765c943ef14e5bcf11e46e6139fa044be564881378349236bf2e3453",
+				"dweb:/ipfs/QmZEeeXoFPW47amyP35gfzomF9DixqqTEPwzBakv6cZw6i"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/Math.sol": {
+			"keccak256": "0x005ec64c6313f0555d59e278f9a7a5ab2db5bdc72a027f255a37c327af1ec02d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4ece9f0b9c8daca08c76b6b5405a6446b6f73b3a15fab7ff56e296cbd4a2c875",
+				"dweb:/ipfs/QmQyRpyPRL5SQuAgj6SHmbir3foX65FJjbVTTQrA2EFg6L"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/SignedMath.sol": {
+			"keccak256": "0x5f7e4076e175393767754387c962926577f1660dd9b810187b9002407656be72",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7d533a1c97cd43a57cd9c465f7ee8dd0e39ae93a8fb8ff8e5303a356b081cdcc",
+				"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
+			]
+		},
+		"Solidity100/Solidity41-50.sol": {
+			"keccak256": "0x5b0e9d0008ba3708e7b822406daf8da03288cd7d30ee201675e5e76c282a4496",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a94f010f4d698f7633c3ddb5e31d466bcdcaf5bb5089b40fa01d5dcb033f0832",
+				"dweb:/ipfs/QmQ8k5ZrdKXyubgKNDarj2izr25Cqy8U1n8uxabAkp5bBb"
 			]
 		}
 	},

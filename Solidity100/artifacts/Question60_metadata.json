@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_date",
+						"type": "uint256"
+					}
+				],
+				"name": "getReservation",
+				"outputs": [
+					{
+						"internalType": "string[2]",
+						"name": "",
+						"type": "string[2]"
+					},
+					{
+						"internalType": "string[2]",
+						"name": "",
+						"type": "string[2]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_room",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string[2]",
+						"name": "_names",
+						"type": "string[2]"
+					}
+				],
+				"name": "setReservation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/Solidity51-60.sol": "Question60"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/Solidity51-60.sol": {
+			"keccak256": "0x18efee3db43b1f3c5ca37093d5bae3bfc89f28b9a1af6e29e8f9025dce540be6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://06f089f1ac3ef39c73b7748d97f7aa0fec52c6abb678932c9346ca317680398a",
+				"dweb:/ipfs/QmYZtnwgUbD7L2YLtsaW8WwAHaqhE7QamFJGJ6RoFPmDBq"
+			]
+		}
+	},
+	"version": 1
+}

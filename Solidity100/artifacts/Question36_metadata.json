@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Status",
+				"outputs": [
+					{
+						"internalType": "enum Question36.status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					}
+				],
+				"name": "setStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/Solidity31-40.sol": "Question36"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/Solidity31-40.sol": {
+			"keccak256": "0x2dde5ab398e277adc61ce9030d990e272c0c99bc8bcc714c01339558af566477",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://447d3b656265b28e04adfb21c47bb7b61ae1a02a174fb892cf271e0aab163a07",
+				"dweb:/ipfs/QmQVM4PVvxfkT4g4eaQEx7ZvTHFXXKPEwCCua5T9HSd3mf"
+			]
+		}
+	},
+	"version": 1
+}

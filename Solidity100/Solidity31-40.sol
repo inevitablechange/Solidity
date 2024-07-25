@@ -127,11 +127,11 @@ contract Question36{
 
     function setStatus(uint _a) public {
         if(_a >= 7) {
-            Status = status(0);
+            Status = status.high;
         } else if(_a>=4) {
-            Status = status(1);
+            Status = status.neutral;
         } else {
-            Status = status(2);
+            Status = status.low;
         }
     }
 
@@ -221,12 +221,11 @@ contract Question40{
              }
         }
 
+        uint[] memory middleNumbers = new uint[](2 - ascending.length % 2);
         if(ascending.length % 2 != 0) {
-            uint[] memory middleNumbers = new uint[](1);
             middleNumbers[0] = ascending[ascending.length / 2];
             return (ascending, middleNumbers);
         } else {
-            uint[] memory middleNumbers = new uint[](2);
             middleNumbers[0] = ascending[ascending.length / 2 - 1];
             middleNumbers[1] = ascending[ascending.length / 2];
             return (ascending, middleNumbers);
