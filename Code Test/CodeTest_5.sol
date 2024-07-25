@@ -12,8 +12,8 @@ contract Test5{
     5250 -> 1hour 27min 30sec
     */
     function uintToTime(uint number) public pure returns(string memory) {
-       uint hour = number / 60 / 60;
-       uint minute = number / 60 - hour * 60;
+       uint hour = number / 3600;
+       uint minute = (number % 3600) / 60;
        uint second = number % 60;
 
        if(hour == 0) {

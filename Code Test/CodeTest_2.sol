@@ -60,4 +60,5 @@ contract TEST2 {
     function getAllStudents() public view returns (student[] memory) {
         return students;
     }
+
 }

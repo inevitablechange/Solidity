@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "breaks",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "charge",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "drivers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "speed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOn",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balances",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "excel",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fillGas",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "off",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "on",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setDriver",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Code Test/CodeTest_7.sol": "Test7"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Code Test/CodeTest_7.sol": {
+			"keccak256": "0x2b714856b77feb71e97aa03913c7858b85777a96fd61608abde8d0270fe94162",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://590323155f8bb08a685b68d9c736e714968b107ab539b654fc488628c7a9e0e7",
+				"dweb:/ipfs/QmWymU41vXnCEzBnn6P69qKUVyGaNBvRnKLhPGaryz2FS4"
+			]
+		}
+	},
+	"version": 1
+}

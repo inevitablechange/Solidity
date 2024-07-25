@@ -83,7 +83,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Code Test/Test1.sol": "Test1"
+			"Code Test/Practice.sol": "Test1"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -97,7 +97,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Code Test/Test1.sol": {
+		"Code Test/Practice.sol": {
 			"keccak256": "0xb087a305325b20ed7ca7691dc53de7fa00de3f16ee99a14b9df2df5ddc9c71d1",
 			"license": "MIT",
 			"urls": [

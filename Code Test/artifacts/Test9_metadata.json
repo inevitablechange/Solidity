@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_pw",
+						"type": "string"
+					}
+				],
+				"name": "checkPassword",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Code Test/CodeTest_9.sol": "Test9"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Code Test/CodeTest_9.sol": {
+			"keccak256": "0x4abdd099e14782481ac54f67d096f54b7a89f44dc772dcfda52de22d5c99db17",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://263faca5b9cf76ae28c8ee5a633897da2f34eabeb15e42898bba612910b50480",
+				"dweb:/ipfs/QmSLfa8V2Fa3u2CmWjn8JZrY7vqAo3HC9iJrVMLSKtGaTM"
+			]
+		}
+	},
+	"version": 1
+}
