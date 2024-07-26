@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_numbers",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "middleNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "_numbers",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "power",
+				"outputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "",
+						"type": "uint256[3]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/Solidity61-70.sol": "Question65"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/Solidity61-70.sol": {
+			"keccak256": "0x579b0fc87c3f9c8c75f33734ccac807446e4acf5e384ebb87717c742f053d917",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://81519bfe744f2ec598d7fc0e6d4c3fca1e5aa35f262068c4b69b710a05394173",
+				"dweb:/ipfs/QmQ13dpM4yJeJHiAiHn46VvTJD8u6kBggG2D4fd2vZ8t4o"
+			]
+		}
+	},
+	"version": 1
+}

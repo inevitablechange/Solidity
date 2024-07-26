@@ -40,9 +40,14 @@ contract Question52{
         for(uint i=0; i<10;i++) {
             id[i] = beforeId[i];
         }
-
         return (beforeId, id);
 
+    }
+
+    function createId2(string memory _name, uint _birthday, address _addr) public pure returns(bytes32, bytes10) {
+        bytes32 beforeId = keccak256(abi.encodePacked(_name,_birthday,_addr));
+
+        return (beforeId, bytes10(beforeId));
     }
 }
 
