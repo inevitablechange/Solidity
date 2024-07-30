@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "carNumber",
+						"type": "string"
+					}
+				],
+				"name": "enter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_carNumber",
+						"type": "string"
+					}
+				],
+				"name": "getCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_carNumber",
+						"type": "string"
+					}
+				],
+				"name": "leave",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Code Test/CodeTest_12.sol": "TEST12"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Code Test/CodeTest_12.sol": {
+			"keccak256": "0x8697000c9b38bf4661632d04dd8286e85198f0edea0dd5394da49c32b72c87fd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://15431970c4ca19aa1f837d9cfc77a4e108111dcf63b13c96b54df34dab9266ca",
+				"dweb:/ipfs/QmbetinQ3y6XvGkRXs37k3ErETAQ5MsWjfSjHqZyi3n4DG"
+			]
+		}
+	},
+	"version": 1
+}

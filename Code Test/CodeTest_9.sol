@@ -27,8 +27,25 @@ contract Test9 {
                 hasLower = true;
             }
         }
-
         return hasNumber && hasUpper && hasLower;
+    }
 
+    function checkPassword2(string memory _pw) public pure returns(uint) {
+        uint sign;
+
+        //_pw 안에 대문자, 소문자, 숫자 1개씩 포함해야 함
+        for(uint i=0; i<bytes(_pw).length;i++){
+            bytes1 _pwByte1 = bytes(_pw)[i];
+
+            if(_pwByte1 >= bytes1(uint8(0+48)) && _pwByte1 <= bytes1(uint8(9+48))) {
+                sign |= 1;
+            } else if(_pwByte1 >= bytes1("A") && _pwByte1 <= bytes1("Z")) {
+                sign |= 2;
+            } else if(_pwByte1 >= bytes1("a") && _pwByte1 <= bytes1("z")) {
+                sign |= 4;
+            }
+        }
+        return sign;
     }
 }
+
