@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/Solidity81-90.sol": "Question87"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/Solidity81-90.sol": {
+			"keccak256": "0xa3dbf18949caed8be032ebc39450b454d9fbe44347699f9fa4210178769494fb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ba6a8e883fe866dbef63793dd43869829d3558cd1eecba42b960b499dbc37afa",
+				"dweb:/ipfs/QmSSbJ4tx3KgMXU9B6qUfxgHVNZk1vujdmUa9EtgrM9ggC"
+			]
+		}
+	},
+	"version": 1
+}
