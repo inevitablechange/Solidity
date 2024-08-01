@@ -4,139 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_NationalTaxService",
-						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_bank",
-						"type": "address"
-					}
-				],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "payTax",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_bankA",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_bankB",
-						"type": "address"
-					}
-				],
-				"name": "receiveTax",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_bank",
-						"type": "address"
-					}
-				],
-				"name": "register",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_bankA",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_bankB",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "tranferToAnotherUser",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_bankA",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_bankB",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transferToB",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_bank",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -165,11 +33,11 @@
 	},
 	"sources": {
 		"Code Test/CodeTest_10.sol": {
-			"keccak256": "0xc90ed217409e779f779a87bf63a0e5af86bf453a7c140cacb6523902c36238b6",
+			"keccak256": "0xd57d6adb934c5cc60e217835441b42c213f75fbff4cfc42c089dedd1a8237f70",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4711dcf2c2556b8c2d58bf4e021d6d309181e0689add6748e9778899b397cfd3",
-				"dweb:/ipfs/QmW6YN2hdoaKXJrTBdeM9zp4apscn9KW4jkHr8hPV2j9Q5"
+				"bzz-raw://d7e538f6f4bfc1f88bec91574aecac5206fee0ed431a4915e2c08facb61966cd",
+				"dweb:/ipfs/QmUDEgo4oFd7hk8vqxN9TQwakdot7TKpVQbK5TX5qV62F5"
 			]
 		}
 	},

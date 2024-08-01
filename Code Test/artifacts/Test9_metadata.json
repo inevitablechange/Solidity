@@ -23,6 +23,25 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_pw",
+						"type": "string"
+					}
+				],
+				"name": "checkPassword2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -53,11 +72,11 @@
 	},
 	"sources": {
 		"Code Test/CodeTest_9.sol": {
-			"keccak256": "0x4abdd099e14782481ac54f67d096f54b7a89f44dc772dcfda52de22d5c99db17",
+			"keccak256": "0x78a441246133e816cd7929d6485acfc822a32646947d3bbaf873b9d4fe4ce112",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://263faca5b9cf76ae28c8ee5a633897da2f34eabeb15e42898bba612910b50480",
-				"dweb:/ipfs/QmSLfa8V2Fa3u2CmWjn8JZrY7vqAo3HC9iJrVMLSKtGaTM"
+				"bzz-raw://4d0db4806e4e3d6e1765bc5dd2941cd5d64462c4138e59a6632c8d1a44b60dbd",
+				"dweb:/ipfs/QmUjpPnDjXWs7qSchiDaWNHeDhZPi3VZVXHt6sdwnQYVS3"
 			]
 		}
 	},

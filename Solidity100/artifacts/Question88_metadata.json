@@ -6,19 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_a",
-						"type": "address"
-					}
-				],
-				"name": "callInternal",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "getOwner",
 				"outputs": [
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity100/Solidity81-90.sol": "Question88"
+			"Solidity100/Solidity91-100.sol": "Question88"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -59,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity100/Solidity81-90.sol": {
-			"keccak256": "0xa3dbf18949caed8be032ebc39450b454d9fbe44347699f9fa4210178769494fb",
+		"Solidity100/Solidity91-100.sol": {
+			"keccak256": "0x92e210a10b7957605cab10d7b256478b31176bc83ecfb851d15ed7846a81b36a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ba6a8e883fe866dbef63793dd43869829d3558cd1eecba42b960b499dbc37afa",
-				"dweb:/ipfs/QmSSbJ4tx3KgMXU9B6qUfxgHVNZk1vujdmUa9EtgrM9ggC"
+				"bzz-raw://9c70a3fad5a7f9b2a753965b05b0f3d5e24bd1a66df05bc131ee4cbe621becca",
+				"dweb:/ipfs/QmYuHxUEXzsNsE1GBAnt73ibS1pX3WzxV8LuuBxkkigEds"
 			]
 		}
 	},

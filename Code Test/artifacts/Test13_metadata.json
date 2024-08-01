@@ -48,63 +48,6 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "k",
-						"type": "uint256"
-					}
-				],
-				"name": "getNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "k",
-						"type": "uint256"
-					}
-				],
-				"name": "getNumber2",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "number2",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
@@ -114,6 +57,63 @@
 					{
 						"internalType": "uint256",
 						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "numbers2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_k",
+						"type": "uint256"
+					}
+				],
+				"name": "returnNumber2K",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_k",
+						"type": "uint256"
+					}
+				],
+				"name": "returnNumberK",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
 						"type": "uint256"
 					}
 				],
@@ -147,7 +147,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Code Test/CodeTest13.sol": "Test13"
+			"Code Test/CodeTest_13.sol": "Test13"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -161,12 +161,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Code Test/CodeTest13.sol": {
-			"keccak256": "0xcdec5edb917c7506a6c4a16f6bca77a855f65e6b12ee503e944975e1ae608831",
+		"Code Test/CodeTest_13.sol": {
+			"keccak256": "0xb50e3613dfb97cace6aab3fe83f8491a5bc7e72a39f97a3eaad8a52ff01a6608",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://74dd8cd759fb10cf16019311ed6f888eb8ec23e3e1314058879c434c793bf2b7",
-				"dweb:/ipfs/QmSBWu23bBJ84eHXAjPqHxrzLY4vwvxuDXCxprsNPMjWrM"
+				"bzz-raw://459d6466f271d66011f3ebce4f2b85ed760d5da23cd40b79fa70dacf78deda79",
+				"dweb:/ipfs/QmV2noPujQZso49FTtzjp6JDTumi7tUf6vicWgLFdz4Jak"
 			]
 		}
 	},

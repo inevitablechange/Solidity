@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getInterfaceId",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Code Test/CodeTest_9.sol": "Interface721"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Code Test/CodeTest_9.sol": {
+			"keccak256": "0x2d56f9d7250d6996086fc14b8d19886f17eddbbf5a24e292da5cdf4f9c90248a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7699793d0340196b34b62ba9fc615521c9049c3aebc8f4858ea86ebef9179012",
+				"dweb:/ipfs/QmZPfbaPuwc5d4xPLYbtnJHW91yeU12tRxGwj5S8RkJrGu"
+			]
+		}
+	},
+	"version": 1
+}
