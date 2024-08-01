@@ -23,6 +23,7 @@ contract Test8 {
         address addr;
         string[] issues;
         mapping(string =>bool) votes;
+        mapping(string => bool) voted;
     }
 
     struct Issue {
@@ -32,41 +33,63 @@ contract Test8 {
         address issuer;
         uint yes;
         uint no;
+        Status result;
+        uint blockNumber;
+    }
+
+    enum Status {
+        ongoing,
+        passed,
+        failed
     }
 
     mapping(address => User) users;
-    mapping(string => Issue) issues;
-    mapping(address => mapping(string => uint)) IssueVoteCount;
+    uint usersCount;
+    mapping(string => Issue) public issues;
+
     uint issueCounts = 1;
 
     // 사용자 등록 기능 - 사용자를 등록하는 기능
-    function setUser(string memory _name) public {
+    function setUser(string calldata _name) public {
         require(bytes(users[msg.sender].name).length == 0, "already registered");
-        require(bytes(_name).length > 0, "name is too short");
         users[msg.sender].name = _name;
         users[msg.sender].addr = msg.sender;
-        users[msg.sender].issues = [""];
+        usersCount++;
     }
 
     // 투표하는 기능 - 특정 안건에 대하여 투표하는 기능, 안건은 제목으로 검색, 이미 투표한 건에 대해서는 재투표 불가능
+    // 안건 진행 과정 - 투표 진행중, 통과, 기각 상태를 구별하여 알려주고 15개 블록 후에 전체의 70%가 투표에 참여하고 투표자의 66% 이상이 찬성해야 통과로 변경, 둘 중 하나라도 만족못하면 기각
     function voteForIssue(string memory _title, bool _vote) public {
-        require(IssueVoteCount[msg.sender][_title] == 0, "already voted");
+        require(users[msg.sender].voted[_title] == false, "already voted");
+        require(block.number <= issues[_title].blockNumber + 15 && issues[_title].result == Status.ongoing);
         if (_vote) {
             issues[_title].yes++;
+            users[msg.sender].votes[_title] = true;
         } else {
             issues[_title].no--;
         }
-        IssueVoteCount[msg.sender][_title]++;
+        users[msg.sender].voted[_title] = true;
+    }
+
+    //web3에서 15개의 블록이 지났을 때 setResult()함수를 호출해야 한다.
+    function setResult(string calldata _title) public {
+        require(block.number > issues[_title].blockNumber + 15);
+
+        uint pros = issues[_title].yes;
+        uint cons = issues[_title].no;
+        uint total = pros + cons;
+
+        if(total * 10 >= usersCount * 7 && pros * 100 >= total * 66) {
+            issues[_title].result = Status.passed;
+        } else {
+            issues[_title].result = Status.failed;
+        }
     }
 
     // 안건 제안 기능 - 자신이 원하는 안건을 제안하는 기능
     function setIssue(string memory _title, string memory _body) public {
         require(issues[_title].number == 0, "issue already exists");
-        issues[_title].number = issueCounts;
-        issues[_title].title = _title;
-        issues[_title].body = _body;
-        issues[_title].issuer = msg.sender;
-
+        issues[_title] = Issue(issueCounts++,_title, _body, msg.sender,0,0,Status.ongoing, block.number);
 
         users[msg.sender].issues.push(_title);
     }
@@ -89,8 +112,5 @@ contract Test8 {
         return issues[_title];
     } 
 
-    // 안건 진행 과정 - 투표 진행중, 통과, 기각 상태를 구별하여 알려주고 15개 블록 후에 전체의 70%가 투표에 참여하고 투표자의 66% 이상이 찬성해야 통과로 변경, 둘 중 하나라도 만족못하면 기각
-    function currentStatus(string memory _title) public view returns(string memory) {
-
-    }
 }
+

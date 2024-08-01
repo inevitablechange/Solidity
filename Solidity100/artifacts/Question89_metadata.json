@@ -4,32 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_description",
-						"type": "string"
-					}
-				],
-				"name": "setCustomer",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -43,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity100/Solidity81-90.sol": "Question89"
+			"Solidity100/Solidity91-100.sol": "Question89"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -57,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity100/Solidity81-90.sol": {
-			"keccak256": "0xa3dbf18949caed8be032ebc39450b454d9fbe44347699f9fa4210178769494fb",
+		"Solidity100/Solidity91-100.sol": {
+			"keccak256": "0x603160dbb7ef64f4107718cac9cc4c5ab897b8baada218087c7f93c952afa6f4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ba6a8e883fe866dbef63793dd43869829d3558cd1eecba42b960b499dbc37afa",
-				"dweb:/ipfs/QmSSbJ4tx3KgMXU9B6qUfxgHVNZk1vujdmUa9EtgrM9ggC"
+				"bzz-raw://1141dcc02e47b0156fd741a4b3cbd83bdaaa164835c977094104634b8b8c55cc",
+				"dweb:/ipfs/QmRVMcuU96EyeqK4QtSTXkfCuyZRpkEqh6XfobtsvnfvMh"
 			]
 		}
 	},

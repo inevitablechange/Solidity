@@ -4,7 +4,240 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					}
+				],
+				"name": "getAllIssues",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "body",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "issuer",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "yes",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "no",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum Test8.Status",
+								"name": "result",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockNumber",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Test8.Issue",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMyIssue",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "body",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "issuer",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "yes",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "no",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum Test8.Status",
+								"name": "result",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockNumber",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Test8.Issue[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "issues",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "body",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "issuer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "yes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "no",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Test8.Status",
+						"name": "result",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockNumber",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_body",
+						"type": "string"
+					}
+				],
+				"name": "setIssue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					}
+				],
+				"name": "setResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_vote",
+						"type": "bool"
+					}
+				],
+				"name": "voteForIssue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +251,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Code Test/CodeTest_9.sol": "Test8"
+			"Code Test/CodeTest_8.sol": "Test8"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +265,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Code Test/CodeTest_9.sol": {
-			"keccak256": "0xdb95380aac46b17cffa15318c66d80088aef33b2d7f789920c21118e578a68c0",
+		"Code Test/CodeTest_8.sol": {
+			"keccak256": "0x2a911387a26b6c84f71bbd15a9c06698791841760e5db6ed6738aed06a113f3d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eea29b40becde8d6ab45c2df7ce9e8dad36bb9173eff771fb3b8886e51d12d02",
-				"dweb:/ipfs/QmPkNLPp6MqBEQnZM4dwfyZeDAfdgmXUCgTYmSXty7BTcC"
+				"bzz-raw://fd3bc8561421be77564e4ae58b8aeb91fdb8b112c7a4e600f140a4315e5523c8",
+				"dweb:/ipfs/QmRwxqGnhShqexJ97yM1ChYG4WazxJZR16u8LiQguYpV2T"
 			]
 		}
 	},

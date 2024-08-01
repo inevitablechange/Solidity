@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "CAorEOA",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/Solidity91-100.sol": "Question92"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/Solidity91-100.sol": {
+			"keccak256": "0xe8055471ed88d6cefb814c51eb111191ea02735bbbd3f4a86b75ac5b79b50dfa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://05aaa2b7002b81239a01b3a89f67b40f4d8d8bb7628660e412b92157cb3a43c0",
+				"dweb:/ipfs/QmWpPtWKXUpsFkrobjCtE2TyNLM5ZHmEesVajeu3k8e9et"
+			]
+		}
+	},
+	"version": 1
+}
