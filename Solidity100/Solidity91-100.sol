@@ -119,8 +119,6 @@ contract Question96{
             lowest := mload(add(start,mul(0x20,3)))
         }
     }
-
-
 }
 
 contract Question97{
@@ -160,7 +158,6 @@ contract Question97{
             sstore(slot, sub(length,1))
         }
     }
-
 }
 
 
@@ -195,44 +192,43 @@ contract Question98{
 
 contract Question99{    
     /*
-    inline - 4개의 숫자를 받아서 가장 큰수와 작은 수를 반환하는 함수를 구현하세요.
+    inline - bytes4형 b의 값을 정하는 함수 setB를 구현하세요.
     */
-    function highestLowest(uint[4] memory _numbers) public pure returns(uint highest, uint lowest) {
+    bytes4 public b = 0x61231321;
+
+    function setB(bytes4 _b) public returns(bytes32 result){
         assembly{
-            let start := _numbers // 
-            for{let i:=0} lt(i,4) {i := add(i,1)} {
-                for{let j:= add(i,1)} lt(j,4) {j := add(j,1)} {
-                    if gt(mload(add(start,mul(0x20,j))),mload(add(start,mul(0x20,i)))) {
-                        let tmp := mload(add(start,mul(0x20,j)))
-                        mstore(add(start,mul(0x20,j)), mload(add(start,mul(0x20,i))))
-                        mstore(add(start,mul(0x20,i)), tmp)
-                    }
-                }
-            }
-            highest := mload(start)
-            lowest := mload(add(start,mul(0x20,3)))
+            let shiftedB := shr(224, _b) 
+            sstore(b.slot, shiftedB)
+            result := sload(b.slot)
         }
     }
 }
 
 contract Question100{
+
+    bytes public b = "0x1234";
+
     /*
-    inline - 4개의 숫자를 받아서 가장 큰수와 작은 수를 반환하는 함수를 구현하세요.
+    inline - bytes형 변수 b의 값을 정하는 함수 setB를 구현하세요.
     */
-    function highestLowest(uint[4] memory _numbers) public pure returns(uint highest, uint lowest) {
+    function setB(bytes memory _b) public {
         assembly{
-            let start := _numbers // 
-            for{let i:=0} lt(i,4) {i := add(i,1)} {
-                for{let j:= add(i,1)} lt(j,4) {j := add(j,1)} {
-                    if gt(mload(add(start,mul(0x20,j))),mload(add(start,mul(0x20,i)))) {
-                        let tmp := mload(add(start,mul(0x20,j)))
-                        mstore(add(start,mul(0x20,j)), mload(add(start,mul(0x20,i))))
-                        mstore(add(start,mul(0x20,i)), tmp)
-                    }
+            let length := mload(_b)
+            let slotNum := b.slot
+            let slots := add(div(length, 32),1)
+
+            //bytes and string storage 방법 확인 : https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html
+            if lt(length, 31) { 
+            let sum := add(mload(add(_b,0x20)), mul(length,2))
+            sstore(slotNum, sum)
+            } 
+            if gt(length, 32) {
+                sstore(slotNum, add(mul(length,2),1))
+                for {let i:=0} lt(i,slots) {i := add(i,1)} {
+                    sstore(add(keccak256(slotNum,0x20),i),mload(add(_b,mul(0x20,add(i,1)))))
                 }
             }
-            highest := mload(start)
-            lowest := mload(add(start,mul(0x20,3)))
         }
     }
 

@@ -6,27 +6,29 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256[4]",
-						"name": "_numbers",
-						"type": "uint256[4]"
-					}
-				],
-				"name": "highestLowest",
+				"inputs": [],
+				"name": "b",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "highest",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "lowest",
-						"type": "uint256"
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "_b",
+						"type": "bytes4"
+					}
+				],
+				"name": "setB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,11 +60,11 @@
 	},
 	"sources": {
 		"Solidity100/Solidity91-100.sol": {
-			"keccak256": "0xe8055471ed88d6cefb814c51eb111191ea02735bbbd3f4a86b75ac5b79b50dfa",
+			"keccak256": "0xb77a1e4ff09c6bdfc2b9c34e010e1b389924cd5156d1172a0affb3663d997487",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://05aaa2b7002b81239a01b3a89f67b40f4d8d8bb7628660e412b92157cb3a43c0",
-				"dweb:/ipfs/QmWpPtWKXUpsFkrobjCtE2TyNLM5ZHmEesVajeu3k8e9et"
+				"bzz-raw://40c5f78c8b205fa3bf4db3c6276974d2386eb798e3f16a852f388708df12c85c",
+				"dweb:/ipfs/QmW3rLt6zcPe3wSAw9pb88dqmvZgLPnsck1XrSPvieh6XP"
 			]
 		}
 	},
